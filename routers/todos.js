@@ -52,7 +52,7 @@ router.patch('/todo/:id', (req, res) => {
     {new: true},
     (err, todo) => {
       if(err) return res.status(500).send(err);
-      return res.status(200).json(todo);
+      return res.status(201).json(todo);
     }
   )
 });
