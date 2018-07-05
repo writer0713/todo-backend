@@ -4,6 +4,7 @@ const TodoModel = require('../models/Todo.model');
 
 router.get('/', (req, res) => {
   TodoModel.find({})
+    .select('_id title isDone time')
     .exec()
     .then(todos => {
       console.log('connect to /todos :: ', todos);
