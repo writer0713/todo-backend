@@ -20,7 +20,7 @@
 ### DELETE
 - ONE TODO : http://localhost:3000/todos/todo/:id
 
-```
+```js
 # Todo Schema with mongodb
 
 const TodoSchema = new Schema({
