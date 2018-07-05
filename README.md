@@ -1,6 +1,6 @@
 # todo-backend
 
-### [ TODO LIST Backend with Node.js ]
+## [ TODO LIST Backend with Node.js ]
 
 <br>
 
@@ -20,9 +20,12 @@
 ### DELETE
 - ONE TODO : http://localhost:3000/todos/todo/:id
 
-```js
-# Todo Schema with mongodb
+<br><br>
 
+--- 
+
+### Todo Schema for mongodb
+```js
 const TodoSchema = new Schema({
   title: {type: String, required: true},
   isDone: {type: String, required: true, default: false},
