@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const config = require('./config');
 const connection = mongoose.connection;
 
-mongoose.connect('mongodb://127.0.0.1:27017/local');
+mongoose.connect(config.db.url);
 
 connection.on('error', (err) => {
   console.log('mongo connection error');

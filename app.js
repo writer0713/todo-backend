@@ -3,10 +3,10 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
 
-require('./db');
+require('./server/config/db');
 
-const todosRouter = require('./routers/todos');
-const indexRouter = require('./routers/index');
+const todosRouter = require('./server/routers/todos');
+const indexRouter = require('./server/routers/index');
 
 const app = express();
 
